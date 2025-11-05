@@ -3,6 +3,7 @@
 Zombie::Zombie(std::string name)
 {
     _name = name;
+    std::cout << "Zombie: " << name << " woke up after a long sleep...\n";
 }
 
 void Zombie::announce()
@@ -12,4 +13,5 @@ void Zombie::announce()
 
 Zombie::~Zombie()
 {
+    std::cout << "Zombie: " << this->_name << " is no longer alive...\n";
 }

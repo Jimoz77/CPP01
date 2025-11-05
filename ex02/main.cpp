@@ -13,7 +13,7 @@ int main()
     std::cout << "Adresse de stringREF : " << &stringREF << "\n\n";
 
     std::cout << "Valeur de brain : " << brain << "\n";
-    std::cout << "Valeur pointée par stringPTR : " << *stringPTR << "\n";
+    std::cout << "Valeur pointée par stringPTR : " << *stringPTR << ", valeur de stringPTR : " << stringPTR << "\n";
     std::cout << "Valeur de stringREF : " << stringREF << "\n";
 
     return 0;
