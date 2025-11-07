@@ -1,6 +1,6 @@
 #include "Harl.hpp"
 
-
+//rajouter des /n dans les message pour ressembler a la donnee
 
 int main(int argc, char *argv[])
 {

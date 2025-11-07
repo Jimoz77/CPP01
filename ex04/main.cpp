@@ -3,12 +3,20 @@
 
 int main(int argc, char *argv[])
 {
-    if(argc != 4)
+	if(argc != 4)
     {
-        std::cerr << "Wrong parameters\nRight usage : <filename> <s1> <s2>\n";
+		std::cerr << "Wrong parameters\nRight usage : <filename> <s1> <s2>\n";
         return (1);
     }
-
+	std::string line;
+	std::string s1 = argv[2];
+	std::string s2 = argv[3];
+	
+	if(s1.empty())
+	{
+		std::cerr <<"Error: s1 cannot be empty\n";
+		return 1;
+	}
 
     //ouvrir le fichier
     std::ifstream inputFile(argv[1]);
@@ -29,15 +37,7 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    std::string line;
-    std::string s1 = argv[2];
-    std::string s2 = argv[3];
 
-    if(s1.empty())
-    {
-        std::cerr <<"Error: s1 cannot be empty\n";
-        return 1;
-    }
 
     while(std::getline(inputFile, line))
     {
