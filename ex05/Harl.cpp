@@ -20,8 +20,7 @@ void Harl::complain(std::string level)
     {
         if(association[i].niveau == level)
         {
-            void (Harl::*rightfunc)() = association[i].fonction;
-            (this->*rightfunc)();
+            (this->*association[i].fonction)();
             return;
         }
     }
